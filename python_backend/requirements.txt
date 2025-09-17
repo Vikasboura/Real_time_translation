@@ -6,4 +6,3 @@ PyAudio
 sounddevice
 soundfile
 numpy
-#AIzaSyDExUWahj0-vczuzk4qMGbw7oVvCvPlAVQ
