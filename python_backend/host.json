@@ -1,0 +1,9 @@
+{
+  "name": "com.vikas.translator",
+  "description": "Real-Time Translation Host",
+  "path": "C:\\Real-Time-Translator-Extension\\python_backend\\launcher.bat",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://pjocdpbeejcingfmmgabhgcjbeiaikmj/"
+  ]
+}

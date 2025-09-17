@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Real-Time Meeting Translator",
+  "version": "1.2",
+  "description": "Python script se connect hokar real-time translation karta hai.",
+  "permissions": [
+    "nativeMessaging"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://meet.google.com/*",
+        "https://*.zoom.us/*"
+      ],
+      "js": [ "content.js" ],
+      "css": [ "style.css" ]
+    }
+  ],
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+}
+

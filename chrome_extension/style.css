@@ -1,0 +1,49 @@
+/* Popup Style */
+body {
+  width: 220px;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+
+button {
+  width: 90%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4285F4;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #9E9E9E;
+  cursor: not-allowed;
+}
+
+/* Subtitle Box Style */
+#translator-subtitle-box {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #FFFFFF;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 22px;
+  z-index: 999999;
+  max-width: 80%;
+  text-align: center;
+  transition: opacity 0.3s;
+}
+
+#translator-subtitle-box.info {
+  color: #BDBDBD; /* Status messages ke liye halka rang */
+}
+
+#translator-subtitle-box.translated {
+  color: #FFFFFF; /* Asli translations ke liye safed rang */
+}
+
